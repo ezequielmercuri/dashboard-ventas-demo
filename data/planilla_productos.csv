@@ -1,0 +1,151 @@
+sku,nombre,categoria,costo,stock_actual,stock_minimo,dias_reposicion
+DIE-0001,Almendras 250 g,Frutos secos,4620.0,3,2,7
+DIE-0002,Almendras 500 g,Frutos secos,8980.0,0,4,15
+DIE-0003,Almendras 1 kg,Frutos secos,14070.0,13,13,7
+DIE-0004,Nueces mariposa 250 g,Frutos secos,4970.0,3,4,15
+DIE-0005,Nueces mariposa 500 g,Frutos secos,7750.0,9,4,15
+DIE-0006,Nueces mariposa 1 kg,Frutos secos,15000.0,9,3,7
+DIE-0007,Castañas de cajú 250 g,Frutos secos,5270.0,8,7,7
+DIE-0008,Castañas de cajú 500 g,Frutos secos,9230.0,7,11,15
+DIE-0009,Castañas de cajú 1 kg,Frutos secos,15900.0,7,2,3
+DIE-0010,Maní tostado sin sal 250 g,Frutos secos,2940.0,5,5,7
+DIE-0011,Maní tostado sin sal 500 g,Frutos secos,5150.0,7,2,3
+DIE-0012,Maní tostado sin sal 1 kg,Frutos secos,8760.0,7,4,10
+DIE-0013,Mix de frutos secos 250 g,Frutos secos,5710.0,17,15,10
+DIE-0014,Mix de frutos secos 500 g,Frutos secos,8870.0,6,4,10
+DIE-0015,Mix de frutos secos 1 kg,Frutos secos,17270.0,76,11,7
+DIE-0016,Pasas de uva 250 g,Frutos secos,3100.0,12,2,3
+DIE-0017,Pasas de uva 500 g,Frutos secos,5770.0,7,2,5
+DIE-0018,Pasas de uva 1 kg,Frutos secos,9490.0,3,8,15
+DIE-0019,Avellanas 250 g,Frutos secos,3540.0,39,28,10
+DIE-0020,Avellanas 500 g,Frutos secos,5960.0,13,12,3
+DIE-0021,Avellanas 1 kg,Frutos secos,11820.0,67,21,5
+DIE-0022,Avena arrollada 250 g,Cereales y semillas,1470.0,10,6,5
+DIE-0023,Avena arrollada 500 g,Cereales y semillas,2950.0,47,55,10
+DIE-0024,Avena arrollada 1 kg,Cereales y semillas,4740.0,14,6,10
+DIE-0025,Granola 250 g,Cereales y semillas,1820.0,4,5,15
+DIE-0026,Granola 500 g,Cereales y semillas,2950.0,59,16,5
+DIE-0027,Granola 1 kg,Cereales y semillas,5890.0,34,8,10
+DIE-0028,Semillas de chía 250 g,Cereales y semillas,780.0,9,2,3
+DIE-0029,Semillas de chía 500 g,Cereales y semillas,1740.0,6,3,10
+DIE-0030,Semillas de chía 1 kg,Cereales y semillas,3110.0,10,6,10
+DIE-0031,Semillas de lino 250 g,Cereales y semillas,1620.0,34,16,7
+DIE-0032,Semillas de lino 500 g,Cereales y semillas,2740.0,8,3,7
+DIE-0033,Semillas de lino 1 kg,Cereales y semillas,4930.0,3,2,7
+DIE-0034,Semillas de girasol 250 g,Cereales y semillas,1260.0,5,4,10
+DIE-0035,Semillas de girasol 500 g,Cereales y semillas,2410.0,6,5,7
+DIE-0036,Semillas de girasol 1 kg,Cereales y semillas,4170.0,4,3,10
+DIE-0037,Quinoa 250 g,Cereales y semillas,1290.0,4,3,10
+DIE-0038,Quinoa 500 g,Cereales y semillas,2430.0,226,31,3
+DIE-0039,Quinoa 1 kg,Cereales y semillas,4190.0,13,4,5
+DIE-0040,Copos de maíz sin azúcar 250 g,Cereales y semillas,1620.0,6,2,7
+DIE-0041,Copos de maíz sin azúcar 500 g,Cereales y semillas,2830.0,20,9,15
+DIE-0042,Copos de maíz sin azúcar 1 kg,Cereales y semillas,5450.0,5,2,5
+DIE-0043,Harina de almendras 250 g,Harinas,2350.0,1,5,7
+DIE-0044,Harina de almendras 500 g,Harinas,4420.0,7,5,10
+DIE-0045,Harina de almendras 1 kg,Harinas,7560.0,3,3,7
+DIE-0046,Harina integral 250 g,Harinas,940.0,7,5,15
+DIE-0047,Harina integral 500 g,Harinas,1750.0,3,9,10
+DIE-0048,Harina integral 1 kg,Harinas,3510.0,23,9,10
+DIE-0049,Harina de garbanzo 250 g,Harinas,1050.0,4,4,15
+DIE-0050,Harina de garbanzo 500 g,Harinas,2000.0,10,2,3
+DIE-0051,Harina de garbanzo 1 kg,Harinas,3450.0,354,139,3
+DIE-0052,Harina de arroz 250 g,Harinas,1450.0,8,6,5
+DIE-0053,Harina de arroz 500 g,Harinas,2490.0,13,5,15
+DIE-0054,Harina de arroz 1 kg,Harinas,4250.0,20,6,3
+DIE-0055,Premezcla sin TACC 250 g,Harinas,3380.0,5,2,7
+DIE-0056,Premezcla sin TACC 500 g,Harinas,5340.0,0,3,10
+DIE-0057,Premezcla sin TACC 1 kg,Harinas,11440.0,14,8,5
+DIE-0058,Harina de coco 250 g,Harinas,2430.0,3,8,10
+DIE-0059,Harina de coco 500 g,Harinas,4270.0,6,2,3
+DIE-0060,Harina de coco 1 kg,Harinas,8990.0,19,4,3
+DIE-0061,Lentejas 250 g,Legumbres,710.0,5,3,10
+DIE-0062,Lentejas 500 g,Legumbres,1440.0,5,2,5
+DIE-0063,Lentejas 1 kg,Legumbres,2380.0,11,4,7
+DIE-0064,Garbanzos 250 g,Legumbres,980.0,4,3,15
+DIE-0065,Garbanzos 500 g,Legumbres,1690.0,6,2,5
+DIE-0066,Garbanzos 1 kg,Legumbres,3180.0,13,17,10
+DIE-0067,Porotos negros 250 g,Legumbres,790.0,8,5,10
+DIE-0068,Porotos negros 500 g,Legumbres,1430.0,4,3,7
+DIE-0069,Porotos negros 1 kg,Legumbres,2910.0,1,2,3
+DIE-0070,Arvejas partidas 250 g,Legumbres,550.0,1,2,5
+DIE-0071,Arvejas partidas 500 g,Legumbres,1130.0,6,4,10
+DIE-0072,Arvejas partidas 1 kg,Legumbres,2230.0,9,2,3
+DIE-0073,Porotos aduki 250 g,Legumbres,810.0,20,12,10
+DIE-0074,Porotos aduki 500 g,Legumbres,1360.0,26,8,7
+DIE-0075,Porotos aduki 1 kg,Legumbres,3100.0,3,2,7
+DIE-0076,Yerba mate orgánica 250 g,Infusiones,2340.0,8,2,7
+DIE-0077,Yerba mate orgánica 500 g,Infusiones,4750.0,24,10,10
+DIE-0078,Yerba mate orgánica 1 kg,Infusiones,9580.0,7,4,7
+DIE-0079,Yerba mate suave 250 g,Infusiones,2230.0,9,4,15
+DIE-0080,Yerba mate suave 500 g,Infusiones,3950.0,6,2,5
+DIE-0081,Yerba mate suave 1 kg,Infusiones,7510.0,13,8,15
+DIE-0082,Té verde 250 g,Infusiones,1410.0,3,2,7
+DIE-0083,Té verde 500 g,Infusiones,2640.0,3,2,7
+DIE-0084,Té verde 1 kg,Infusiones,4420.0,6,2,3
+DIE-0085,Té de hierbas 250 g,Infusiones,1520.0,3,2,3
+DIE-0086,Té de hierbas 500 g,Infusiones,2770.0,4,2,5
+DIE-0087,Té de hierbas 1 kg,Infusiones,5130.0,9,3,15
+DIE-0088,Cacao amargo 250 g,Infusiones,1610.0,7,3,10
+DIE-0089,Cacao amargo 500 g,Infusiones,2490.0,6,2,5
+DIE-0090,Cacao amargo 1 kg,Infusiones,4910.0,6,3,3
+DIE-0091,Miel pura 250 g,Endulzantes,1600.0,6,2,7
+DIE-0092,Miel pura 500 g,Endulzantes,2590.0,67,36,15
+DIE-0093,Miel pura 1 kg,Endulzantes,5460.0,20,10,10
+DIE-0094,Azúcar mascabo 250 g,Endulzantes,1630.0,10,3,5
+DIE-0095,Azúcar mascabo 500 g,Endulzantes,3500.0,13,2,3
+DIE-0096,Azúcar mascabo 1 kg,Endulzantes,5110.0,5,2,3
+DIE-0097,Stevia en polvo 250 g,Endulzantes,1780.0,4,2,3
+DIE-0098,Stevia en polvo 500 g,Endulzantes,3080.0,9,6,15
+DIE-0099,Stevia en polvo 1 kg,Endulzantes,5780.0,5,5,5
+DIE-0100,Azúcar de coco 250 g,Endulzantes,1650.0,11,6,15
+DIE-0101,Azúcar de coco 500 g,Endulzantes,3370.0,4,2,5
+DIE-0102,Azúcar de coco 1 kg,Endulzantes,5590.0,3,2,10
+DIE-0103,Dulce de leche sin azúcar 250 g,Endulzantes,1070.0,26,7,5
+DIE-0104,Dulce de leche sin azúcar 500 g,Endulzantes,2050.0,12,7,5
+DIE-0105,Dulce de leche sin azúcar 1 kg,Endulzantes,3160.0,12,3,3
+DIE-0106,Barra de cereal 250 g,Snacks,1390.0,6,2,3
+DIE-0107,Barra de cereal 500 g,Snacks,2570.0,7,2,5
+DIE-0108,Barra de cereal 1 kg,Snacks,5520.0,6,2,7
+DIE-0109,Galletas de arroz 250 g,Snacks,800.0,8,4,15
+DIE-0110,Galletas de arroz 500 g,Snacks,1720.0,5,3,10
+DIE-0111,Galletas de arroz 1 kg,Snacks,2820.0,7,3,7
+DIE-0112,Garrapiñada 250 g,Snacks,610.0,7,2,3
+DIE-0113,Garrapiñada 500 g,Snacks,1090.0,21,8,3
+DIE-0114,Garrapiñada 1 kg,Snacks,1970.0,7,2,10
+DIE-0115,Chips de banana 250 g,Snacks,1230.0,4,3,10
+DIE-0116,Chips de banana 500 g,Snacks,1990.0,5,2,7
+DIE-0117,Chips de banana 1 kg,Snacks,4200.0,10,2,3
+DIE-0118,Mix tropical 250 g,Snacks,1300.0,6,3,10
+DIE-0119,Mix tropical 500 g,Snacks,2360.0,5,3,7
+DIE-0120,Mix tropical 1 kg,Snacks,4620.0,6,7,15
+DIE-0121,Aceite de coco 250 g,Almacén natural,1750.0,8,4,7
+DIE-0122,Aceite de coco 500 g,Almacén natural,3590.0,12,8,10
+DIE-0123,Aceite de coco 1 kg,Almacén natural,5580.0,7,6,15
+DIE-0124,Mantequilla de maní 250 g,Almacén natural,1130.0,21,24,15
+DIE-0125,Mantequilla de maní 500 g,Almacén natural,2120.0,4,3,15
+DIE-0126,Mantequilla de maní 1 kg,Almacén natural,3410.0,6,2,3
+DIE-0127,Tofu 250 g,Almacén natural,2260.0,8,2,3
+DIE-0128,Tofu 500 g,Almacén natural,4130.0,3,2,7
+DIE-0129,Tofu 1 kg,Almacén natural,7290.0,31,15,7
+DIE-0130,Fideos integrales 250 g,Almacén natural,2560.0,16,5,7
+DIE-0131,Fideos integrales 500 g,Almacén natural,4810.0,8,2,5
+DIE-0132,Fideos integrales 1 kg,Almacén natural,10330.0,5,5,15
+DIE-0133,Arroz yamaní 250 g,Almacén natural,1620.0,7,4,10
+DIE-0134,Arroz yamaní 500 g,Almacén natural,3200.0,8,3,10
+DIE-0135,Arroz yamaní 1 kg,Almacén natural,5480.0,15,7,5
+DIE-0136,Polenta orgánica 250 g,Almacén natural,1900.0,28,8,7
+DIE-0137,Polenta orgánica 500 g,Almacén natural,3680.0,305,208,15
+DIE-0138,Polenta orgánica 1 kg,Almacén natural,6380.0,7,7,15
+DIE-0139,Levadura nutricional 250 g,Suplementos,4210.0,15,8,15
+DIE-0140,Levadura nutricional 500 g,Suplementos,8870.0,47,65,10
+DIE-0141,Levadura nutricional 1 kg,Suplementos,13570.0,1,324,15
+DIE-0142,Colágeno 250 g,Suplementos,5790.0,4,2,3
+DIE-0143,Colágeno 500 g,Suplementos,12510.0,14,4,5
+DIE-0144,Colágeno 1 kg,Suplementos,19310.0,19,5,5
+DIE-0145,Proteína vegetal 250 g,Suplementos,7420.0,19,3,3
+DIE-0146,Proteína vegetal 500 g,Suplementos,13550.0,2,2,5
+DIE-0147,Proteína vegetal 1 kg,Suplementos,24400.0,8,3,7
+DIE-0148,Spirulina 250 g,Suplementos,3200.0,0,6,3
+DIE-0149,Spirulina 500 g,Suplementos,5690.0,9,5,7
+DIE-0150,Spirulina 1 kg,Suplementos,12080.0,8,4,7

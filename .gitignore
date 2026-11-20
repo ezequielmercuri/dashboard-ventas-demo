@@ -1,0 +1,18 @@
+# Entorno virtual y caches de Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Claves y secretos: NUNCA se suben
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Base local de DuckDB (se regenera desde los CSV)
+*.duckdb
+*.duckdb.wal
+
+# Notas personales: quedan solo en la compu
+CLAUDE.md
+docs/PLAN.md

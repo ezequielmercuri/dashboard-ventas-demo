@@ -1,0 +1,151 @@
+Identificador de URL;Nombre;Categorías;Precio;Stock;SKU;Mostrar en tienda
+almendras-250-g;Almendras 250 g;Frutos secos;7490.0;3;DIE-0001;SI
+almendras-500-g;Almendras 500 g;Frutos secos;13720.0;0;DIE-0002;SI
+almendras-1-kg;Almendras 1 kg;Frutos secos;24960.0;13;DIE-0003;SI
+nueces-mariposa-250-g;Nueces mariposa 250 g;Frutos secos;7430.0;3;DIE-0004;SI
+nueces-mariposa-500-g;Nueces mariposa 500 g;Frutos secos;13620.0;9;DIE-0005;SI
+nueces-mariposa-1-kg;Nueces mariposa 1 kg;Frutos secos;24770.0;9;DIE-0006;SI
+castañas-de-cajú-250-g;Castañas de cajú 250 g;Frutos secos;8160.0;8;DIE-0007;SI
+castañas-de-cajú-500-g;Castañas de cajú 500 g;Frutos secos;14970.0;7;DIE-0008;SI
+castañas-de-cajú-1-kg;Castañas de cajú 1 kg;Frutos secos;27210.0;7;DIE-0009;SI
+maní-tostado-sin-sal-250-g;Maní tostado sin sal 250 g;Frutos secos;4360.0;5;DIE-0010;SI
+maní-tostado-sin-sal-500-g;Maní tostado sin sal 500 g;Frutos secos;7990.0;7;DIE-0011;SI
+maní-tostado-sin-sal-1-kg;Maní tostado sin sal 1 kg;Frutos secos;14520.0;7;DIE-0012;SI
+mix-de-frutos-secos-250-g;Mix de frutos secos 250 g;Frutos secos;8360.0;17;DIE-0013;SI
+mix-de-frutos-secos-500-g;Mix de frutos secos 500 g;Frutos secos;15320.0;6;DIE-0014;SI
+mix-de-frutos-secos-1-kg;Mix de frutos secos 1 kg;Frutos secos;27860.0;76;DIE-0015;SI
+pasas-de-uva-250-g;Pasas de uva 250 g;Frutos secos;4750.0;12;DIE-0016;SI
+pasas-de-uva-500-g;Pasas de uva 500 g;Frutos secos;8710.0;7;DIE-0017;SI
+pasas-de-uva-1-kg;Pasas de uva 1 kg;Frutos secos;15850.0;3;DIE-0018;SI
+avellanas-250-g;Avellanas 250 g;Frutos secos;5700.0;39;DIE-0019;SI
+avellanas-500-g;Avellanas 500 g;Frutos secos;10470.0;13;DIE-0020;SI
+avellanas-1-kg;Avellanas 1 kg;Frutos secos;19030.0;67;DIE-0021;SI
+avena-arrollada-250-g;Avena arrollada 250 g;Cereales y semillas;2390.0;10;DIE-0022;SI
+avena-arrollada-500-g;Avena arrollada 500 g;Cereales y semillas;4370.0;47;DIE-0023;SI
+avena-arrollada-1-kg;Avena arrollada 1 kg;Cereales y semillas;7940.0;14;DIE-0024;SI
+granola-250-g;Granola 250 g;Cereales y semillas;2720.0;4;DIE-0025;SI
+granola-500-g;Granola 500 g;Cereales y semillas;4980.0;59;DIE-0026;SI
+granola-1-kg;Granola 1 kg;Cereales y semillas;9040.0;34;DIE-0027;SI
+semillas-de-chía-250-g;Semillas de chía 250 g;Cereales y semillas;1430.0;9;DIE-0028;SI
+semillas-de-chía-500-g;Semillas de chía 500 g;Cereales y semillas;2610.0;6;DIE-0029;SI
+semillas-de-chía-1-kg;Semillas de chía 1 kg;Cereales y semillas;4750.0;10;DIE-0030;SI
+semillas-de-lino-250-g;Semillas de lino 250 g;Cereales y semillas;2610.0;34;DIE-0031;SI
+semillas-de-lino-500-g;Semillas de lino 500 g;Cereales y semillas;4790.0;8;DIE-0032;SI
+semillas-de-lino-1-kg;Semillas de lino 1 kg;Cereales y semillas;8690.0;3;DIE-0033;SI
+semillas-de-girasol-250-g;Semillas de girasol 250 g;Cereales y semillas;1980.0;5;DIE-0034;SI
+semillas-de-girasol-500-g;Semillas de girasol 500 g;Cereales y semillas;3620.0;6;DIE-0035;SI
+semillas-de-girasol-1-kg;Semillas de girasol 1 kg;Cereales y semillas;6600.0;4;DIE-0036;SI
+quinoa-250-g;Quinoa 250 g;Cereales y semillas;2160.0;4;DIE-0037;SI
+quinoa-500-g;Quinoa 500 g;Cereales y semillas;3960.0;226;DIE-0038;SI
+quinoa-1-kg;Quinoa 1 kg;Cereales y semillas;7200.0;13;DIE-0039;SI
+copos-de-maíz-sin-azúcar-250-g;Copos de maíz sin azúcar 250 g;Cereales y semillas;2760.0;6;DIE-0040;SI
+copos-de-maíz-sin-azúcar-500-g;Copos de maíz sin azúcar 500 g;Cereales y semillas;5060.0;20;DIE-0041;SI
+copos-de-maíz-sin-azúcar-1-kg;Copos de maíz sin azúcar 1 kg;Cereales y semillas;9190.0;5;DIE-0042;SI
+harina-de-almendras-250-g;Harina de almendras 250 g;Harinas;3710.0;1;DIE-0043;SI
+harina-de-almendras-500-g;Harina de almendras 500 g;Harinas;6810.0;7;DIE-0044;SI
+harina-de-almendras-1-kg;Harina de almendras 1 kg;Harinas;12380.0;3;DIE-0045;SI
+harina-integral-250-g;Harina integral 250 g;Harinas;1700.0;7;DIE-0046;SI
+harina-integral-500-g;Harina integral 500 g;Harinas;3110.0;3;DIE-0047;SI
+harina-integral-1-kg;Harina integral 1 kg;Harinas;5660.0;23;DIE-0048;SI
+harina-de-garbanzo-250-g;Harina de garbanzo 250 g;Harinas;1670.0;4;DIE-0049;SI
+harina-de-garbanzo-500-g;Harina de garbanzo 500 g;Harinas;3070.0;10;DIE-0050;SI
+harina-de-garbanzo-1-kg;Harina de garbanzo 1 kg;Harinas;5590.0;354;DIE-0051;SI
+harina-de-arroz-250-g;Harina de arroz 250 g;Harinas;2250.0;8;DIE-0052;SI
+harina-de-arroz-500-g;Harina de arroz 500 g;Harinas;4120.0;13;DIE-0053;SI
+harina-de-arroz-1-kg;Harina de arroz 1 kg;Harinas;7490.0;20;DIE-0054;SI
+premezcla-sin-tacc-250-g;Premezcla sin TACC 250 g;Harinas;4930.0;5;DIE-0055;SI
+premezcla-sin-tacc-500-g;Premezcla sin TACC 500 g;Harinas;9050.0;0;DIE-0056;SI
+premezcla-sin-tacc-1-kg;Premezcla sin TACC 1 kg;Harinas;16450.0;14;DIE-0057;SI
+harina-de-coco-250-g;Harina de coco 250 g;Harinas;3940.0;3;DIE-0058;SI
+harina-de-coco-500-g;Harina de coco 500 g;Harinas;7220.0;6;DIE-0059;SI
+harina-de-coco-1-kg;Harina de coco 1 kg;Harinas;13120.0;19;DIE-0060;SI
+lentejas-250-g;Lentejas 250 g;Legumbres;1230.0;5;DIE-0061;SI
+lentejas-500-g;Lentejas 500 g;Legumbres;2260.0;5;DIE-0062;SI
+lentejas-1-kg;Lentejas 1 kg;Legumbres;4120.0;11;DIE-0063;SI
+garbanzos-250-g;Garbanzos 250 g;Legumbres;1490.0;4;DIE-0064;SI
+garbanzos-500-g;Garbanzos 500 g;Legumbres;2740.0;6;DIE-0065;SI
+garbanzos-1-kg;Garbanzos 1 kg;Legumbres;4980.0;13;DIE-0066;SI
+porotos-negros-250-g;Porotos negros 250 g;Legumbres;1400.0;8;DIE-0067;SI
+porotos-negros-500-g;Porotos negros 500 g;Legumbres;2570.0;4;DIE-0068;SI
+porotos-negros-1-kg;Porotos negros 1 kg;Legumbres;4660.0;1;DIE-0069;SI
+arvejas-partidas-250-g;Arvejas partidas 250 g;Legumbres;970.0;1;DIE-0070;SI
+arvejas-partidas-500-g;Arvejas partidas 500 g;Legumbres;1780.0;6;DIE-0071;SI
+arvejas-partidas-1-kg;Arvejas partidas 1 kg;Legumbres;3240.0;9;DIE-0072;SI
+porotos-aduki-250-g;Porotos aduki 250 g;Legumbres;1350.0;20;DIE-0073;SI
+porotos-aduki-500-g;Porotos aduki 500 g;Legumbres;2460.0;26;DIE-0074;SI
+porotos-aduki-1-kg;Porotos aduki 1 kg;Legumbres;4470.0;3;DIE-0075;SI
+yerba-mate-orgánica-250-g;Yerba mate orgánica 250 g;Infusiones;4160.0;8;DIE-0076;SI
+yerba-mate-orgánica-500-g;Yerba mate orgánica 500 g;Infusiones;7630.0;24;DIE-0077;SI
+yerba-mate-orgánica-1-kg;Yerba mate orgánica 1 kg;Infusiones;13870.0;7;DIE-0078;SI
+yerba-mate-suave-250-g;Yerba mate suave 250 g;Infusiones;3590.0;9;DIE-0079;SI
+yerba-mate-suave-500-g;Yerba mate suave 500 g;Infusiones;6580.0;6;DIE-0080;SI
+yerba-mate-suave-1-kg;Yerba mate suave 1 kg;Infusiones;11960.0;13;DIE-0081;SI
+té-verde-250-g;Té verde 250 g;Infusiones;2090.0;3;DIE-0082;SI
+té-verde-500-g;Té verde 500 g;Infusiones;3850.0;3;DIE-0083;SI
+té-verde-1-kg;Té verde 1 kg;Infusiones;6980.0;6;DIE-0084;SI
+té-de-hierbas-250-g;Té de hierbas 250 g;Infusiones;2330.0;3;DIE-0085;SI
+té-de-hierbas-500-g;Té de hierbas 500 g;Infusiones;4280.0;4;DIE-0086;SI
+té-de-hierbas-1-kg;Té de hierbas 1 kg;Infusiones;7770.0;9;DIE-0087;SI
+cacao-amargo-250-g;Cacao amargo 250 g;Infusiones;2330.0;7;DIE-0088;SI
+cacao-amargo-500-g;Cacao amargo 500 g;Infusiones;4270.0;6;DIE-0089;SI
+cacao-amargo-1-kg;Cacao amargo 1 kg;Infusiones;7760.0;6;DIE-0090;SI
+miel-pura-250-g;Miel pura 250 g;Endulzantes;2360.0;6;DIE-0091;SI
+miel-pura-500-g;Miel pura 500 g;Endulzantes;4330.0;67;DIE-0092;SI
+miel-pura-1-kg;Miel pura 1 kg;Endulzantes;7890.0;20;DIE-0093;SI
+azúcar-mascabo-250-g;Azúcar mascabo 250 g;Endulzantes;2760.0;10;DIE-0094;SI
+azúcar-mascabo-500-g;Azúcar mascabo 500 g;Endulzantes;5060.0;13;DIE-0095;SI
+azúcar-mascabo-1-kg;Azúcar mascabo 1 kg;Endulzantes;9190.0;5;DIE-0096;SI
+stevia-en-polvo-250-g;Stevia en polvo 250 g;Endulzantes;2530.0;4;DIE-0097;SI
+stevia-en-polvo-500-g;Stevia en polvo 500 g;Endulzantes;4650.0;9;DIE-0098;SI
+stevia-en-polvo-1-kg;Stevia en polvo 1 kg;Endulzantes;8460.0;5;DIE-0099;SI
+azúcar-de-coco-250-g;Azúcar de coco 250 g;Endulzantes;2770.0;11;DIE-0100;SI
+azúcar-de-coco-500-g;Azúcar de coco 500 g;Endulzantes;5070.0;4;DIE-0101;SI
+azúcar-de-coco-1-kg;Azúcar de coco 1 kg;Endulzantes;9220.0;3;DIE-0102;SI
+dulce-de-leche-sin-azúcar-250-g;Dulce de leche sin azúcar 250 g;Endulzantes;1620.0;26;DIE-0103;SI
+dulce-de-leche-sin-azúcar-500-g;Dulce de leche sin azúcar 500 g;Endulzantes;2960.0;12;DIE-0104;SI
+dulce-de-leche-sin-azúcar-1-kg;Dulce de leche sin azúcar 1 kg;Endulzantes;5390.0;12;DIE-0105;SI
+barra-de-cereal-250-g;Barra de cereal 250 g;Snacks;2430.0;6;DIE-0106;SI
+barra-de-cereal-500-g;Barra de cereal 500 g;Snacks;4460.0;7;DIE-0107;SI
+barra-de-cereal-1-kg;Barra de cereal 1 kg;Snacks;8100.0;6;DIE-0108;SI
+galletas-de-arroz-250-g;Galletas de arroz 250 g;Snacks;1350.0;8;DIE-0109;SI
+galletas-de-arroz-500-g;Galletas de arroz 500 g;Snacks;2480.0;5;DIE-0110;SI
+galletas-de-arroz-1-kg;Galletas de arroz 1 kg;Snacks;4500.0;7;DIE-0111;SI
+garrapiñada-250-g;Garrapiñada 250 g;Snacks;1040.0;7;DIE-0112;SI
+garrapiñada-500-g;Garrapiñada 500 g;Snacks;1910.0;21;DIE-0113;SI
+garrapiñada-1-kg;Garrapiñada 1 kg;Snacks;3470.0;7;DIE-0114;SI
+chips-de-banana-250-g;Chips de banana 250 g;Snacks;1880.0;4;DIE-0115;SI
+chips-de-banana-500-g;Chips de banana 500 g;Snacks;3440.0;5;DIE-0116;SI
+chips-de-banana-1-kg;Chips de banana 1 kg;Snacks;6260.0;10;DIE-0117;SI
+mix-tropical-250-g;Mix tropical 250 g;Snacks;2270.0;6;DIE-0118;SI
+mix-tropical-500-g;Mix tropical 500 g;Snacks;4160.0;5;DIE-0119;SI
+mix-tropical-1-kg;Mix tropical 1 kg;Snacks;7570.0;6;DIE-0120;SI
+aceite-de-coco-250-g;Aceite de coco 250 g;Almacén natural;2820.0;8;DIE-0121;SI
+aceite-de-coco-500-g;Aceite de coco 500 g;Almacén natural;5170.0;12;DIE-0122;SI
+aceite-de-coco-1-kg;Aceite de coco 1 kg;Almacén natural;9400.0;7;DIE-0123;SI
+mantequilla-de-maní-250-g;Mantequilla de maní 250 g;Almacén natural;1790.0;21;DIE-0124;SI
+mantequilla-de-maní-500-g;Mantequilla de maní 500 g;Almacén natural;3280.0;4;DIE-0125;SI
+mantequilla-de-maní-1-kg;Mantequilla de maní 1 kg;Almacén natural;5960.0;6;DIE-0126;SI
+tofu-250-g;Tofu 250 g;Almacén natural;3260.0;8;DIE-0127;SI
+tofu-500-g;Tofu 500 g;Almacén natural;5990.0;3;DIE-0128;SI
+tofu-1-kg;Tofu 1 kg;Almacén natural;10870.0;31;DIE-0129;SI
+fideos-integrales-250-g;Fideos integrales 250 g;Almacén natural;4630.0;16;DIE-0130;SI
+fideos-integrales-500-g;Fideos integrales 500 g;Almacén natural;8490.0;8;DIE-0131;SI
+fideos-integrales-1-kg;Fideos integrales 1 kg;Almacén natural;15420.0;5;DIE-0132;SI
+arroz-yamaní-250-g;Arroz yamaní 250 g;Almacén natural;2570.0;7;DIE-0133;SI
+arroz-yamaní-500-g;Arroz yamaní 500 g;Almacén natural;4710.0;8;DIE-0134;SI
+arroz-yamaní-1-kg;Arroz yamaní 1 kg;Almacén natural;8550.0;15;DIE-0135;SI
+polenta-orgánica-250-g;Polenta orgánica 250 g;Almacén natural;3090.0;28;DIE-0136;SI
+polenta-orgánica-500-g;Polenta orgánica 500 g;Almacén natural;5670.0;305;DIE-0137;SI
+polenta-orgánica-1-kg;Polenta orgánica 1 kg;Almacén natural;10320.0;7;DIE-0138;SI
+levadura-nutricional-250-g;Levadura nutricional 250 g;Suplementos;7200.0;15;DIE-0139;SI
+levadura-nutricional-500-g;Levadura nutricional 500 g;Suplementos;13190.0;47;DIE-0140;SI
+levadura-nutricional-1-kg;Levadura nutricional 1 kg;Suplementos;23990.0;1;DIE-0141;SI
+colágeno-250-g;Colágeno 250 g;Suplementos;10140.0;4;DIE-0142;SI
+colágeno-500-g;Colágeno 500 g;Suplementos;18580.0;14;DIE-0143;SI
+colágeno-1-kg;Colágeno 1 kg;Suplementos;33780.0;19;DIE-0144;SI
+proteína-vegetal-250-g;Proteína vegetal 250 g;Suplementos;12910.0;19;DIE-0145;SI
+proteína-vegetal-500-g;Proteína vegetal 500 g;Suplementos;23660.0;2;DIE-0146;SI
+proteína-vegetal-1-kg;Proteína vegetal 1 kg;Suplementos;43020.0;8;DIE-0147;SI
+spirulina-250-g;Spirulina 250 g;Suplementos;5570.0;0;DIE-0148;SI
+spirulina-500-g;Spirulina 500 g;Suplementos;10190.0;9;DIE-0149;SI
+spirulina-1-kg;Spirulina 1 kg;Suplementos;18530.0;8;DIE-0150;SI
