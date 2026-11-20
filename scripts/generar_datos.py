@@ -9,6 +9,8 @@ formato parecido al real (aproximado: hay que ajustarlo con exports reales):
   data/planilla_productos.csv         planilla propia: costo, stock mínimo, reposición
   data/compras.csv                    reposiciones de mercadería
   data/conteos_stock.csv              conteo de stock semanal (sábados al cierre)
+  data/cierres_caja.csv               cierre de caja por turno (lo que anota el empleado)
+  data/verdad/errores_caja.csv        faltantes y turnos sin cargar puestos a propósito
   data/ipc.csv                        índice de precios mensual (ficticio)
   data/verdad/ventas.csv              "la verdad" en el esquema único, para testear
   data/verdad/venta_items.csv         el ETL del Día 2 (incluye el efectivo, que no
@@ -56,6 +58,12 @@ CANTIDAD_A_SIN_REPONER = 3      # productos top que no se reponen en las última
 DIAS_SIN_REPONER = 21
 CANTIDAD_ESTANCADOS = 15        # productos que dejan de venderse al final
 DIAS_ESTANCADOS = 45
+
+# Cierres de caja (efectivo)
+FONDO_DE_CAJA = 20_000          # cambio con el que arranca cada turno
+DETALLES_SALIDA = ["Pago a proveedor", "Compra de bolsas", "Pago de flete", "Retiro del dueño"]
+CANTIDAD_FALTANTES = 4          # turnos donde falta plata en la caja
+PROPORCION_SIN_CARGAR = 0.03    # turnos que nadie cargó
 
 CATALOGO = {
     "Frutos secos": ["Almendras", "Nueces mariposa", "Castañas de cajú", "Maní tostado sin sal",
@@ -272,14 +280,78 @@ def generar(semilla: int = SEMILLA, fecha_inicio: date = FECHA_INICIO, meses: in
     catalogo["costo"] = [precio_del_mes(c, meses - 1) for c in catalogo["costo_base"]]
     catalogo["precio"] = [precio_del_mes(p, meses - 1) for p in catalogo["precio_base"]]
 
+    ipc = armar_ipc(rng, fecha_inicio, meses)
+    cierres, errores_caja = armar_cierres_caja(rng, fake, ventas, fecha_inicio, dias)
+
     return {
         "ventas": ventas,
         "venta_items": items,
         "productos": catalogo,
         "compras": pd.DataFrame(compras),
         "conteos_stock": pd.DataFrame(conteos),
-        "ipc": armar_ipc(rng, fecha_inicio, meses),
+        "ipc": ipc,
+        "cierres_caja": cierres,
+        "errores_caja": errores_caja,
     }
+
+
+def turno_de(hora: int) -> str:
+    """El local abre de mañana (hasta las 14) y de tarde (desde las 16)."""
+    return "mañana" if hora < 14 else "tarde"
+
+
+def armar_cierres_caja(rng, fake, ventas: pd.DataFrame, fecha_inicio: date, dias: int):
+    """Cierre de caja por turno, tal como lo anotaría el empleado.
+
+    El empleado NO calcula cuánto vendió: anota con cuánto cambio arrancó,
+    cuánto efectivo contó al cerrar y lo que pagó en efectivo. El ETL hace la cuenta.
+    Se agregan errores reales a propósito (turnos sin cargar y faltantes) y se
+    registran en `errores_caja` para poder testear que la app los detecta.
+    """
+    efectivo = ventas[ventas["medio_pago"] == "efectivo"]
+    clave = [efectivo["fecha_hora"].dt.date, efectivo["fecha_hora"].dt.hour.map(turno_de)]
+    vendido = efectivo.groupby(clave)["monto_bruto"].agg(["sum", "size"])
+
+    empleados = [fake.first_name() for _ in range(3)]
+    filas = []
+    for d in range(dias):
+        dia = fecha_inicio + timedelta(days=d)
+        turnos = ["mañana", "tarde"] if dia.weekday() < 5 else ["mañana"] if dia.weekday() == 5 else []
+        for turno in turnos:
+            total, cantidad = vendido.loc[(dia, turno)] if (dia, turno) in vendido.index else (0.0, 0)
+            salidas, detalle = 0.0, ""
+            if rng.random() < 0.12:
+                salidas = min(round(rng.uniform(15_000, 60_000), -2), FONDO_DE_CAJA + total)
+                detalle = str(rng.choice(DETALLES_SALIDA))
+            filas.append({
+                "fecha": dia, "turno": turno, "responsable": str(rng.choice(empleados)),
+                "fondo_inicial": FONDO_DE_CAJA,
+                "efectivo_final": FONDO_DE_CAJA + total - salidas,
+                "salidas": salidas, "detalle_salidas": detalle,
+                # No todos los empleados anotan cuántas ventas hicieron.
+                "cantidad_ventas": int(cantidad) if rng.random() > 0.3 else None,
+            })
+    cierres = pd.DataFrame(filas)
+    cierres["cantidad_ventas"] = cierres["cantidad_ventas"].astype("Int64")
+
+    # Errores a propósito: faltantes de plata y turnos que nadie cargó.
+    errores = []
+    con_ventas = cierres.index[cierres["efectivo_final"] > cierres["fondo_inicial"]]
+    for i in rng.choice(con_ventas, size=CANTIDAD_FALTANTES, replace=False):
+        venta_turno = cierres.at[i, "efectivo_final"] - FONDO_DE_CAJA + cierres.at[i, "salidas"]
+        diferencia = round(venta_turno * rng.uniform(0.05, 0.15), -2)
+        cierres.at[i, "efectivo_final"] -= diferencia
+        errores.append({"fecha": cierres.at[i, "fecha"], "turno": cierres.at[i, "turno"],
+                        "tipo": "faltante", "diferencia": diferencia})
+    sin_cargar = rng.choice(len(cierres), size=int(len(cierres) * PROPORCION_SIN_CARGAR), replace=False)
+    sin_cargar = sorted(int(i) for i in sin_cargar)
+    for i in sin_cargar:
+        errores.append({"fecha": cierres.at[i, "fecha"], "turno": cierres.at[i, "turno"],
+                        "tipo": "sin_cargar", "diferencia": None})
+    # Si un turno con faltante tampoco se cargó, queda solo como "sin_cargar".
+    errores = pd.DataFrame(errores).drop_duplicates(["fecha", "turno"], keep="last")
+    cierres = cierres.drop(index=sin_cargar).reset_index(drop=True)
+    return cierres, errores.sort_values(["fecha", "turno"], ignore_index=True)
 
 
 def armar_ipc(rng: np.random.Generator, fecha_inicio: date, meses: int) -> pd.DataFrame:
@@ -373,6 +445,8 @@ def guardar(datos: dict, carpeta: Path) -> None:
         carpeta / "planilla_productos.csv", index=False)
     datos["compras"].to_csv(carpeta / "compras.csv", index=False)
     datos["conteos_stock"].to_csv(carpeta / "conteos_stock.csv", index=False)
+    datos["cierres_caja"].to_csv(carpeta / "cierres_caja.csv", index=False)
+    datos["errores_caja"].to_csv(carpeta / "verdad" / "errores_caja.csv", index=False)
     datos["ipc"].to_csv(carpeta / "ipc.csv", index=False)
 
     columnas_verdad = ["id", "fecha_hora", "canal", "medio_pago", "monto_bruto",

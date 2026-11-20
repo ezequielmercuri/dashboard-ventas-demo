@@ -4,12 +4,14 @@
   Las órdenes de Tiendanube que ya están en MP no se vuelven a sumar.
 - Unidades vendidas por producto: salen de los conteos de stock semanales,
   porque MP no dice qué productos se vendieron en el local.
+- Efectivo: sale de los cierres de caja por turno (no pasa por MP).
 """
 
 from pathlib import Path
 
 import pandas as pd
 
+from src.etl.caja import leer_cierres_caja
 from src.etl.mercadopago import leer_mercadopago
 from src.etl.planilla import leer_compras, leer_conteos, leer_ipc, leer_planilla_productos
 from src.etl.tiendanube import leer_tiendanube_productos, leer_tiendanube_ventas
@@ -90,4 +92,5 @@ def cargar_todo(carpeta: str | Path) -> dict:
         "compras": compras,
         "unidades_semana": unidades_por_conteo(conteos, compras) if conteos is not None else None,
         "ipc": _si_existe(carpeta, "ipc.csv", leer_ipc),
+        "caja": _si_existe(carpeta, "cierres_caja.csv", leer_cierres_caja),
     }
