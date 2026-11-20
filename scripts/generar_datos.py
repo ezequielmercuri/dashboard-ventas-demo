@@ -8,6 +8,7 @@ formato parecido al real (aproximado: hay que ajustarlo con exports reales):
   data/tiendanube_productos.csv       export del catálogo con stock
   data/planilla_productos.csv         planilla propia: costo, stock mínimo, reposición
   data/compras.csv                    reposiciones de mercadería
+  data/conteos_stock.csv              conteo de stock semanal (sábados al cierre)
   data/ipc.csv                        índice de precios mensual (ficticio)
   data/verdad/ventas.csv              "la verdad" en el esquema único, para testear
   data/verdad/venta_items.csv         el ETL del Día 2 (incluye el efectivo, que no
@@ -173,6 +174,9 @@ def generar(semilla: int = SEMILLA, fecha_inicio: date = FECHA_INICIO, meses: in
     pedidos_pendientes: dict[int, tuple[date, int]] = {}  # índice -> (fecha de llegada, cantidad)
 
     ventas, items, compras = [], [], []
+    # Conteo de stock que el dueño anota en la planilla: uno inicial y uno cada sábado al cierre.
+    conteos = [{"fecha": fecha_inicio - timedelta(days=1), "sku": s, "stock": int(q)}
+               for s, q in zip(catalogo["sku"], stock)]
     id_mp = 98_000_000_000
     id_efectivo = 0
     nro_orden = 1000
@@ -257,6 +261,10 @@ def generar(semilla: int = SEMILLA, fecha_inicio: date = FECHA_INICIO, meses: in
                 llegada = dia + timedelta(days=int(catalogo.at[i, "dias_reposicion"]))
                 pedidos_pendientes[i] = (llegada, int(cantidad_pedido.iloc[i]))
 
+        # 5) Los sábados al cierre (y el último día) se cuenta el stock.
+        if dia.weekday() == 5 or d == dias - 1:
+            conteos.extend({"fecha": dia, "sku": s, "stock": int(q)} for s, q in zip(catalogo["sku"], stock))
+
     ventas = pd.DataFrame(ventas).sort_values("fecha_hora", ignore_index=True)
     items = pd.DataFrame(items)
     catalogo["stock_actual"] = stock
@@ -269,6 +277,7 @@ def generar(semilla: int = SEMILLA, fecha_inicio: date = FECHA_INICIO, meses: in
         "venta_items": items,
         "productos": catalogo,
         "compras": pd.DataFrame(compras),
+        "conteos_stock": pd.DataFrame(conteos),
         "ipc": armar_ipc(rng, fecha_inicio, meses),
     }
 
@@ -363,6 +372,7 @@ def guardar(datos: dict, carpeta: Path) -> None:
     productos[["sku", "nombre", "categoria", "costo", "stock_actual", "stock_minimo", "dias_reposicion"]].to_csv(
         carpeta / "planilla_productos.csv", index=False)
     datos["compras"].to_csv(carpeta / "compras.csv", index=False)
+    datos["conteos_stock"].to_csv(carpeta / "conteos_stock.csv", index=False)
     datos["ipc"].to_csv(carpeta / "ipc.csv", index=False)
 
     columnas_verdad = ["id", "fecha_hora", "canal", "medio_pago", "monto_bruto",
